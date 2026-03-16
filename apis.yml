@@ -1,139 +1,55 @@
+aid: qradar
 name: IBM QRadar Security Intelligence Platform
 description: IBM QRadar is a security information and event management (SIEM) platform that provides real-time monitoring, threat detection, and security analytics capabilities through comprehensive REST APIs.
-url: https://www.ibm.com/qradar
+type: Index
+url: https://raw.githubusercontent.com/api-evangelist/qradar/refs/heads/main/apis.yml
 created: '2024-01-01'
-modified: '2024-01-01'
-specificationVersion: '0.16'
+modified: '2026-03-16'
+specificationVersion: '0.19'
 apis:
-- name: QRadar REST API
-  description: Core REST API for managing QRadar SIEM functionality including offenses, assets, rules, and searches
-  image: https://www.ibm.com/brand/experience-guides/developer/b1db1ae501d522a1a4b49613fe07c9f1/01_8-bar-positive.svg
-  humanURL: https://www.ibm.com/docs/en/qradar-common
-  baseURL: https://<qradar-console>/api
-  tags:
-  - SIEM
-  - Security
-  - Analytics
-  - Threat Detection
-  - Log Management
-  properties:
+  - aid: qradar:qradar-rest-api
+    name: QRadar REST API
+    description: Core REST API for managing QRadar SIEM functionality including offenses, assets, rules, and searches
+    humanURL: https://www.ibm.com/docs/en/qradar-common
+    tags:
+      - SIEM
+      - Security
+      - Analytics
+      - Threat Detection
+      - Log Management
+    properties:
+      - type: Documentation
+        url: https://www.ibm.com/docs/en/qsip/7.5?topic=api-restful-overview
+      - type: Authentication
+        url: https://www.ibm.com/docs/en/qradar-common?topic=api-authentication-methods
+  - aid: qradar:qradar-gui-app-framework-api
+    name: QRadar GUI App Framework API
+    description: API for developing and managing QRadar apps and extensions
+    humanURL: https://www.ibm.com/docs/en/qradar-common?topic=framework-qradar-app-overview
+    tags:
+      - Extensions
+      - Apps
+      - Development
+    properties:
+      - type: Documentation
+        url: https://www.ibm.com/docs/en/qradar-common?topic=framework-qradar-app-overview
+common:
   - type: Documentation
-    url: https://www.ibm.com/docs/en/qsip/7.5?topic=api-restful-overview
-  - type: OpenAPI
-    url: https://www.ibm.com/docs/en/qradar-common?topic=api-restful-versions
+    url: https://www.ibm.com/docs/en/qradar-common
   - type: Authentication
     url: https://www.ibm.com/docs/en/qradar-common?topic=api-authentication-methods
-  endpoints:
-  - name: Analytics
-    description: Access to QRadar analytics and ADE (Anomaly Detection Engine)
-    path: /analytics
-    methods:
-    - GET
-    - POST
-    - PUT
-    - DELETE
-  - name: Offenses
-    description: Security offense management and retrieval
-    path: /siem/offenses
-    methods:
-    - GET
-    - POST
-    - PUT
-  - name: Assets
-    description: Asset and vulnerability management
-    path: /asset_model
-    methods:
-    - GET
-    - POST
-    - PUT
-    - DELETE
-  - name: Reference Data
-    description: Manage reference sets, tables, maps, and maps of sets
-    path: /reference_data
-    methods:
-    - GET
-    - POST
-    - PUT
-    - DELETE
-  - name: Ariel
-    description: Query language for searching QRadar data
-    path: /ariel
-    methods:
-    - GET
-    - POST
-  - name: Rules
-    description: Custom rule and building block management
-    path: /analytics/rules
-    methods:
-    - GET
-    - POST
-    - PUT
-    - DELETE
-  - name: Reports
-    description: Report generation and management
-    path: /reports
-    methods:
-    - GET
-    - POST
-    - DELETE
-  - name: Configuration
-    description: System configuration and domain management
-    path: /config
-    methods:
-    - GET
-    - POST
-    - PUT
-    - DELETE
-- name: QRadar Admin API
-  description: Administrative API for user management, licensing, and system configuration
-  baseURL: https://<qradar-console>/api/config
-  tags:
-  - Administration
-  - User Management
-  - Configuration
-  properties:
-  - type: Documentation
-    url: https://www.ibm.com/docs/en/qradar-common?topic=areas-configuration-endpoints
-- name: QRadar Staged Config API
-  description: API for managing staged configuration changes before deployment
-  baseURL: https://<qradar-console>/api/staged_config
-  tags:
-  - Configuration
-  - Deployment
-  properties:
-  - type: Documentation
-    url: https://www.ibm.com/docs/en/qradar-common?topic=areas-staged-configuration-endpoints
-- name: QRadar GUI App Framework API
-  description: API for developing and managing QRadar apps and extensions
-  baseURL: https://<qradar-console>/api/gui_app_framework
-  tags:
-  - Extensions
-  - Apps
-  - Development
-  properties:
-  - type: Documentation
-    url: https://www.ibm.com/docs/en/qradar-common?topic=framework-qradar-app-overview
-  - type: SDK
-    url: https://github.com/ibm-security-intelligence/qradar-app-sdk
-common:
-- type: Portal
-  url: https://www.ibm.com/docs/en/qradar-common
-- type: Authentication
-  url: https://www.ibm.com/docs/en/qradar-common?topic=api-authentication-methods
-- type: Support
-  url: https://www.ibm.com/mysupport
-- type: Status
-  url: https://www.ibm.com/cloud/status
-- type: Terms of Service
-  url: https://www.ibm.com/legal
-- type: Privacy Policy
-  url: https://www.ibm.com/privacy
+  - type: Support
+    url: https://www.ibm.com/mysupport
+  - type: Status
+    url: https://www.ibm.com/cloud/status
+  - type: TermsOfService
+    url: https://www.ibm.com/legal
+  - type: PrivacyPolicy
+    url: https://www.ibm.com/privacy
+  - type: Community
+    url: https://community.ibm.com/community/user/security/communities/community-home?CommunityKey=d0b01247-b4d8-4466-8605-dc5c7d30c58f
+  - type: Website
+    url: https://www.ibm.com/security/qradar
 maintainers:
-- name: IBM Security
-  email: qradar@us.ibm.com
-  url: https://www.ibm.com/security
-contact:
-- type: Support
-  url: https://www.ibm.com/mysupport
-- type: Community
-  url: https://community.ibm.com/community/user/security/communities/community-home?CommunityKey=d0b01247-b4d8-4466-8605-dc5c7d30c58f
+  - FN: Kin Lane
+    email: kin@apievangelist.com
