@@ -1,10 +1,19 @@
 aid: qradar
 name: IBM QRadar Security Intelligence Platform
-description: IBM QRadar is a security information and event management (SIEM) platform that provides real-time monitoring, threat detection, and security analytics capabilities through comprehensive REST APIs.
+description: >-
+  IBM QRadar is a security information and event management (SIEM) platform that
+  provides real-time monitoring, threat detection, and security analytics capabilities
+  through comprehensive REST APIs.
 type: Index
 url: https://raw.githubusercontent.com/api-evangelist/qradar/refs/heads/main/apis.yml
+tags:
+  - Analytics
+  - Log Management
+  - Security
+  - SIEM
+  - Threat Detection
 created: '2024-01-01'
-modified: '2026-03-16'
+modified: '2026-04-28'
 specificationVersion: '0.19'
 apis:
   - aid: qradar:qradar-rest-api
