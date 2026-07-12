@@ -46,6 +46,10 @@ apis:
       - type: Documentation
         url: https://www.ibm.com/docs/en/qradar-common?topic=framework-qradar-app-overview
 common:
+  - type: VulnerabilityDisclosure
+    url: security/qradar-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/qradar-domain-security.yml
   - type: Documentation
     url: https://www.ibm.com/docs/en/qradar-common
   - type: Authentication
