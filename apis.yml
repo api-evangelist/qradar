@@ -52,6 +52,10 @@ apis:
       API for developing and managing QRadar apps and extensions.
     humanURL: https://www.ibm.com/docs/en/qradar-common?topic=framework-qradar-app-overview
     tags:
+      - Application
+      - Development
+      - Extensions
+    tags_raw:
       - Apps
       - Development
       - Extensions
