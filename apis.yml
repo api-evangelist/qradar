@@ -69,6 +69,12 @@ apis:
   - type: Documentation
     url: https://www.ibm.com/docs/en/qradar-common?topic=framework-qradar-app-overview
 common:
+- type: Plans
+  url: plans/qradar-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/qradar-rate-limits.yml
+- type: FinOps
+  url: finops/qradar-finops.yml
 - type: ParentCompany
   url: https://apis.io/providers/ibm/
   name: Ibm
